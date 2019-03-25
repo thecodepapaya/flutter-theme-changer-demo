@@ -1,6 +1,6 @@
-# theme_change
+# Theme Changing App demo
 
-A new Flutter project.
+A flutter app for demonstrating a very basic switch button for changing theme of the app. For more informaion refer to the Getting started section below.
 
 ## Getting Started
 
