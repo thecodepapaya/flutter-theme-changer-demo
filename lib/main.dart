@@ -10,16 +10,17 @@ class ThemeChanger extends StatefulWidget {
 class ThemeChangerState extends State<ThemeChanger> {
   ThemeData currentTheme = ThemeData.light();
   bool lightTheme = true;
+  String title = "ThemeChanger";
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Theme Changer',
+      title: title,
       theme: currentTheme,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Theme Changer"),
+          title: Text(title),
         ),
         body: Center(
           child: Switch(
