@@ -4,10 +4,10 @@ void main() => runApp(ThemeChanger());
 
 class ThemeChanger extends StatefulWidget {
   @override
-  _ThemeChangerState createState() => _ThemeChangerState();
+  ThemeChangerState createState() => ThemeChangerState();
 }
 
-class _ThemeChangerState extends State<ThemeChanger> {
+class ThemeChangerState extends State<ThemeChanger> {
   ThemeData currentTheme = ThemeData.light();
   bool lightTheme = true;
 
@@ -23,6 +23,7 @@ class _ThemeChangerState extends State<ThemeChanger> {
         ),
         body: Center(
           child: Switch(
+            key: ValueKey('themeSwitch'),
             value: lightTheme,
             onChanged: (bool newVal) {
               setState(() {
